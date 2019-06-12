@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="GBK"?>
+<project>
+    <import resource="dbConfig.xml"/>
+    
+    <configuration>
+        <prop key="defaultEncoding">UTF-8</prop>
+        <prop key="outputEncoding">UTF-8</prop>
+        <prop key="templateDir">{root}/template</prop>
+    </configuration>
+    
+    <templates>
+        <template name="descript-params">kye/descript-params.ftl</template>
+        <template name="descript-result">kye/descript-result.ftl</template>
+        <template name="generic-search">kye/generic-search.ftl</template>
+        <template name="define-column">kye/define-column.ftl</template>
+        <template name="json">kye/json.ftl</template>
+        <template name="pojo">kye/Pojo.ftl</template>
+        <template name="BO">kye/BO.ftl</template>
+        <template name="RemoteService">kye/RemoteService.ftl</template>
+        <template name="Mapper">kye/Mapper.ftl</template>
+        <template name="MapperXML">kye/MapperXML.ftl</template>
+        <template name="Service">kye/Service.ftl</template>
+        <template name="Controller">kye/Controller.ftl</template>
+        <template name="ClientService">kye/ClientService.ftl</template>
+        <!--<template name="jsp_search">kye/jsp_search.ftl</template>-->
+        <!--<template name="jsp_form">kye/jsp_form.ftl</template>-->
+        <!--<template name="jsp_view">kye/jsp_view.ftl</template>-->
+    </templates>
+    
+    <rules>
+        <rule name="tableName" type="JavaScript">
+            <![CDATA[
+            function convertTableName(tableName) {
+                var a = tableName.split('_');
+                if (a.length > 1) {
+                    //a.shift();
+                }
+                var tempStr;
+                for (var i = 0, len = a.length; i < len; i++) {
+                    tempStr = a[i];
+                    a[i] = tempStr.charAt(0).toUpperCase() + tempStr.substring(1).toLowerCase();
+                }
+                return a.join('');
+            }
+            ]]>
+        </rule>
+        <rule name="columnName" type="JavaScript">
+            <![CDATA[
+            function convertColumnName(columnName) {
+                var a = columnName.split('_');
+                if (a.length > 1) {
+                    //a.shift();
+                }
+                var tempStr;
+                for (var i = 0, len = a.length; i < len; i++) {
+                    tempStr = a[i];
+                    if (i == 0) {
+                        a[i] = tempStr.toLowerCase();
+                    } else {
+                        a[i] = tempStr.charAt(0).toUpperCase() + tempStr.substring(1).toLowerCase();
+                    }
+                }
+                return a.join('');
+            }
+            ]]>
+        </rule>
+        <rule name="pathName" type="JavaScript">
+            <![CDATA[
+            function convertPathName(fullpathname) {
+                var a = fullpathname.split('/');
+                var tempStr;
+                for (var i = 0, len = a.length; i < len; i++) {
+                    a[i] = a[i].charAt(0).toLowerCase() + a[i].substring(1);
+                }
+                return a.join('/');
+            }
+            ]]>
+        </rule>
+    </rules>
+        
+    <inputs>
+        <input>
+            <source type="db">
+                <db name="mysql">
+                    <!-- schema oracle为用户名(大写), mysql为库名 -->
+                    <prop key="schema">managesystem</prop>
+                    <!-- table oracle一定要大写,多个表中间用','隔开 follow,follow_detail-->
+                    <prop key="table">logasset</prop>
+                </db>
+            </source>
+            <custom>
+                <prop key="version">1.0</prop>
+                <!--作者-->
+                <prop key="author">zhoushisheng;</prop>
+                <!--组件名称-->
+                <prop key="functionName">跟单管理</prop>
+                <!--模块名称-->
+                <prop key="module">logasset</prop>
+                <!--根包名称-->
+                 <prop key="rootPackage">com.kyexpress.erp.tms</prop>
+                <!--model包名称-->
+                <prop key="voPackage">{rootPackage}.{module}.api.model</prop>
+                <!--bo包名称-->
+                <prop key="boPackage">{rootPackage}.{module}.api.bo</prop>
+                <!--remoteService包名称-->
+                <prop key="remoteServicePackage">{rootPackage}.{module}.api.service</prop>
+                <!--dao包名称-->
+                <prop key="daoPackage">{rootPackage}.{module}.provider.mapper</prop>
+                <!--service包名称-->
+                <prop key="servicePackage">{rootPackage}.{module}.provider.service</prop>
+                <!--controller包名称-->
+                <prop key="actionPackage">{rootPackage}.{module}.provider.controller</prop>
+                <!--jsp路径名称-->
+                <prop key="jspPath">{module}</prop>
+                <prop key="clientPackage">{rootPackage}.{module}.client.client.service</prop>
+            </custom>
+            
+            <outputs outputDir="{root}/out">
+                <output name="base" subOutputDir="src/java/api" template="pojo" package-name="{voPackage}">
+                    <rule>
+                        <prop key="tableName">tableName</prop>
+                        <prop key="columnName">columnName</prop>
+                    </rule>
+                    <filePattern>{package-name}/{class-name}.java</filePattern>
+                </output>
+                
+                <output extends="base" template="descript-params" subOutputDir="descript">
+                    <filePattern>{class-name}-param.txt</filePattern>
+                </output>
+                <output extends="base" template="descript-result" subOutputDir="descript">
+                    <filePattern>{class-name}-result.txt</filePattern>
+                </output>
+                <output extends="base" template="generic-search" subOutputDir="descript">
+                    <filePattern>{class-name}-generic-search.json</filePattern>
+                </output>
+                <output extends="base" template="json" subOutputDir="descript">
+                    <filePattern>{class-name}-json.txt</filePattern>
+                </output>
+                <output extends="base" template="define-column" subOutputDir="descript">
+                    <filePattern>{class-name}-define-column.txt</filePattern>
+                </output>
+                
+                <output extends="base" template="BO" package-name="{boPackage}">
+                    <filePattern>{package-name}/{class-name}BO.java</filePattern>
+                </output>
+                
+                <output extends="base" subOutputDir="src/java/provider" template="Mapper" package-name="{daoPackage}">
+                    <filePattern>{package-name}/{class-name}Mapper.java</filePattern>
+                </output>
+                
+                <output extends="base" subOutputDir="src/java/mapperXML" template="MapperXML" package-name="{daoPackage}">
+                    <filePattern>{package-name}/{class-name}Mapper.xml</filePattern>
+                </output>
+
+                <output extends="base" template="RemoteService" package-name="{remoteServicePackage}">
+                    <filePattern>{package-name}/{class-name}RemoteService.java</filePattern>
+                </output>
+                
+                <output extends="base" subOutputDir="src/java/provider" template="Service" package-name="{servicePackage}">
+                    <filePattern>{package-name}/{class-name}Service.java</filePattern>
+                </output>
+
+                <output extends="base" subOutputDir="src/java/provider" template="Controller" package-name="{actionPackage}">
+                    <filePattern>{package-name}/{class-name}Controller.java</filePattern>
+                </output>
+                
+                <output extends="base" subOutputDir="src/java/client" template="ClientService" package-name="{clientPackage}">
+                    <filePattern>{package-name}/{class-name}Service.java</filePattern>
+                </output>
+
+                <!--
+                <output name="base3" subOutputDir="jsp" template="jsp_search" package-name="{jspPath}">
+                    <rule>
+                        <prop key="tableName">tableName</prop>
+                        <prop key="columnName">columnName</prop>
+                        <prop key="pathName">pathName</prop>
+                    </rule>
+                    <insert position="after"></insert>
+                    <filePattern>{package-name}/{class-name}/search.jsp</filePattern>
+                </output>
+
+                <output extends="base3" template="jsp_form" package-name="{jspPath}" >
+                    <filePattern>{package-name}/{class-name}/form.jsp</filePattern>
+                </output>
+
+                <output extends="base3" template="jsp_view" package-name="{jspPath}" >
+                    <filePattern>{package-name}/{class-name}/view.jsp</filePattern>
+                </output>
+                -->
+            </outputs>
+        </input>
+    </inputs>
+</project>

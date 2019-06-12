@@ -1,0 +1,130 @@
+[
+	{
+    "key": "id",
+    "label": "id"
+  },
+	{
+    "key": "serverid",
+    "label": "机器编码"
+  },
+	{
+    "key": "operdate",
+    "label": "操作日期, 物理日期 (委托日期)"
+  },
+	{
+    "key": "cleardate",
+    "label": "清算日期, (成交日期)"
+  },
+	{
+    "key": "bizdate",
+    "label": "交收日期, 表明该笔业务所属日期"
+  },
+	{
+    "key": "custid",
+    "label": "客户代码"
+  },
+	{
+    "key": "custname",
+    "label": "客户姓名"
+  },
+	{
+    "key": "fundid",
+    "label": "资金帐号"
+  },
+	{
+    "key": "moneytype",
+    "label": "货币代码"
+  },
+	{
+    "key": "custkind",
+    "label": "客户类别"
+  },
+	{
+    "key": "custgroup",
+    "label": "客户分组"
+  },
+	{
+    "key": "fundeffect",
+    "label": "资金发生数"
+  },
+	{
+    "key": "fundbal",
+    "label": "资金本次余额"
+  },
+	{
+    "key": "market",
+    "label": "交易市场"
+  },
+	{
+    "key": "biztype",
+    "label": "业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)"
+  },
+	{
+    "key": "stkcode",
+    "label": "证券码"
+  },
+	{
+    "key": "stktype",
+    "label": "证券类别"
+  },
+	{
+    "key": "stkname",
+    "label": "证券名称[或银行名称]"
+  },
+	{
+    "key": "stkeffect",
+    "label": "证券发生数, (过户数量)"
+  },
+	{
+    "key": "stkbal",
+    "label": "证券余额"
+  },
+	{
+    "key": "orderqty",
+    "label": "委托数量"
+  },
+	{
+    "key": "orderprice",
+    "label": "委托价格"
+  },
+	{
+    "key": "orderdate",
+    "label": "委托日期"
+  },
+	{
+    "key": "ordertime",
+    "label": "委托时间"
+  },
+	{
+    "key": "matchqty",
+    "label": "成交数量(存被冲销的流水号)"
+  },
+	{
+    "key": "matchamt",
+    "label": "成交金额"
+  },
+	{
+    "key": "matchtimes",
+    "label": "成交笔数"
+  },
+	{
+    "key": "matchprice",
+    "label": "成交价格"
+  },
+	{
+    "key": "matchtime",
+    "label": "成交时间, (第一笔成交的时间)"
+  },
+	{
+    "key": "feeJsxf",
+    "label": "净佣金"
+  },
+	{
+    "key": "feeSxf",
+    "label": "佣金"
+  },
+	{
+    "key": "bsflag",
+    "label": "买卖类别"
+  }
+]

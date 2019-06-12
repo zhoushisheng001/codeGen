@@ -1,0 +1,1557 @@
+2019-06-12 16:52:54,130 [codegen.BaseRun]-[DEBUG] load project.xml start ...
+2019-06-12 16:52:54,208 [codegen.config.ProjectInfo]-[DEBUG] --------------------- configuration ---------------------
+2019-06-12 16:52:54,270 [codegen.config.ProjectInfo]-[DEBUG] --------------------- Templates ---------------------
+2019-06-12 16:52:54,271 [codegen.config.ProjectInfo]-[DEBUG] --------------------- Rule ---------------------
+2019-06-12 16:52:54,273 [codegen.config.ProjectInfo]-[DEBUG] --------------------- inputs ---------------------
+2019-06-12 16:52:54,274 [codegen.config.ProjectInfo]-[DEBUG] --------------------- inputData ---------------------
+2019-06-12 16:52:54,274 [codegen.config.ProjectInfo]-[DEBUG] --------------------- custom ---------------------
+2019-06-12 16:52:54,276 [codegen.config.ProjectInfo]-[DEBUG] outputDir:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen/out
+2019-06-12 16:52:54,276 [codegen.config.ProjectInfo]-[DEBUG] --------------------- outputs ---------------------
+2019-06-12 16:52:54,276 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,277 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}.java
+2019-06-12 16:52:54,277 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,277 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,277 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{class-name}-param.txt
+2019-06-12 16:52:54,277 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,278 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,278 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{class-name}-result.txt
+2019-06-12 16:52:54,278 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,278 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,278 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{class-name}-generic-search.json
+2019-06-12 16:52:54,278 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,278 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{class-name}-json.txt
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{class-name}-define-column.txt
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}BO.java
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,279 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}Mapper.java
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}Mapper.xml
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}RemoteService.java
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,280 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,281 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}Service.java
+2019-06-12 16:52:54,281 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,281 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,281 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}Controller.java
+2019-06-12 16:52:54,281 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,281 [codegen.config.ProjectInfo]-[DEBUG] --------------------- output ---------------------
+2019-06-12 16:52:54,282 [codegen.config.ProjectInfo]-[DEBUG] filePattern:{package-name}/{class-name}Service.java
+2019-06-12 16:52:54,282 [codegen.config.ProjectInfo]-[DEBUG] insert[position:after]:
+2019-06-12 16:52:54,282 [codegen.config.ProjectInfo]-[DEBUG] --------------------- source ---------------------
+2019-06-12 16:52:54,282 [codegen.config.ProjectInfo]-[DEBUG] databaseSchema:managesystem
+2019-06-12 16:52:54,282 [codegen.config.ProjectInfo]-[DEBUG] databaseTable:logasset
+2019-06-12 16:52:54,287 [codegen.config.DbConfigInfo]-[DEBUG] --------------------- dataSource ---------------------
+2019-06-12 16:52:54,288 [codegen.config.DbConfigInfo]-[DEBUG] driverClassName:com.mysql.jdbc.Driver
+2019-06-12 16:52:54,288 [codegen.config.DbConfigInfo]-[DEBUG] url:jdbc:mysql://mysql.ms.com:3306/managesystem?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+2019-06-12 16:52:54,288 [codegen.config.DbConfigInfo]-[DEBUG] username:root
+2019-06-12 16:52:54,288 [codegen.config.DbConfigInfo]-[DEBUG] password:ZZ2018@info!
+2019-06-12 16:52:54,288 [codegen.config.DbConfigInfo]-[DEBUG] --------------------- typeMap ---------------------
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:bit)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:bool)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:boolean)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:tinyint)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:smallint)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:mediumint)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:int)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:integer)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:bigint)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:float)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:double)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:decimal)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:date)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:datetime)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:timestamp)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:time)
+2019-06-12 16:52:54,298 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:year)
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:char)
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:varchar)
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:text)
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:clob)
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] DataType:(type:blob)
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] --------------------- commentSql ---------------------
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] table:SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_COMMENT FROM INFORMATION_SCHEMA.TABLES 
+                    WHERE TABLE_SCHEMA = {schema} AND TABLE_NAME = {table}
+2019-06-12 16:52:54,299 [codegen.config.DbConfigInfo]-[DEBUG] column:SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS 
+                    WHERE TABLE_SCHEMA = {schema} AND TABLE_NAME = {table} AND COLUMN_NAME = {column}
+2019-06-12 16:52:54,311 [codegen.BaseRun]-[DEBUG] load project.xml finished.
+2019-06-12 16:52:54,311 [codegen.BaseRun]-[INFO] user.dir:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen
+2019-06-12 16:52:54,311 [codegen.BaseRun]-[INFO] root.dir:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen
+2019-06-12 16:52:54,314 [codegen.BaseRun]-[INFO] xml.path:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\project.xml
+2019-06-12 16:52:54,316 [codegen.database.DatabaseManager]-[DEBUG] driverClassName:com.mysql.jdbc.Driver
+2019-06-12 16:52:54,316 [codegen.database.DatabaseManager]-[DEBUG] url:jdbc:mysql://mysql.ms.com:3306/managesystem?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+2019-06-12 16:52:54,317 [codegen.database.DatabaseManager]-[DEBUG] username:root
+2019-06-12 16:52:54,317 [codegen.database.DatabaseManager]-[DEBUG] password:ZZ2018@info!
+2019-06-12 16:52:54,701 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:54,702 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:54,703 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:54,704 [codegen.export.ruleengine.RuleEngineManager]-[DEBUG] java.version:1.8.0_60
+2019-06-12 16:52:54,708 [codegen.export.ruleengine.RuleEngineManager]-[DEBUG] RuleEngine:codegen.export.ruleengine.JavaRuleEngine
+2019-06-12 16:52:55,387 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:55,387 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:55,388 [codegen.export.TemplateProducer]-[DEBUG] template:kye/Pojo.ftl
+2019-06-12 16:52:55,388 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\api\com\kyexpress\erp\tms\logasset\api\model\Logasset.java
+2019-06-12 16:52:55,388 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/Pojo.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,391 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/Pojo.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\Pojo.ftl
+2019-06-12 16:52:55,479 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/var.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,480 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/var.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\var.ftl
+2019-06-12 16:52:55,546 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[Copyright.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,547 [freemarker.cache]-[DEBUG] Compiling FreeMarker template Copyright.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\Copyright.ftl
+2019-06-12 16:52:55,548 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[JavaHeader.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,549 [freemarker.cache]-[DEBUG] Compiling FreeMarker template JavaHeader.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\JavaHeader.ftl
+2019-06-12 16:52:55,551 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/PojoFields.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,552 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/PojoFields.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\PojoFields.ftl
+2019-06-12 16:52:55,563 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[PojoConstructors.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,564 [freemarker.cache]-[DEBUG] Compiling FreeMarker template PojoConstructors.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\PojoConstructors.ftl
+2019-06-12 16:52:55,565 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[PojoPropertyAccessors.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,566 [freemarker.cache]-[DEBUG] Compiling FreeMarker template PojoPropertyAccessors.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\PojoPropertyAccessors.ftl
+2019-06-12 16:52:55,572 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[PojoToString.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,575 [freemarker.cache]-[DEBUG] Compiling FreeMarker template PojoToString.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\PojoToString.ftl
+2019-06-12 16:52:55,576 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[PojoEqualsHashcode.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:55,576 [freemarker.cache]-[DEBUG] Compiling FreeMarker template PojoEqualsHashcode.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\PojoEqualsHashcode.ftl
+2019-06-12 16:52:55,577 [codegen.export.TemplateProducer]-[DEBUG] Converted content: /**************************************************************************/
+/*          乐在分享 zhoushisheng                                        */
+/*                                                                       */
+/*                                                                       */
+
+/**************************************************************************/
+
+/**
+  * <pre>
+  * 作   者：zhoushisheng;
+  * 创建日期：2019-6-12
+  * </pre>
+  */
+
+package com.kyexpress.erp.tms.logasset.api.model;
+
+import java.io.Serializable;
+
+import javax.validation.constraints.NotNull;
+
+import com.kyexpress.framework.model.GenericModel;
+
+/**
+ * <pre>
+ * 客户交易数据<<logasset>>(数据来源于集中交易和融资融券)实体类
+ * 数据库表名称：logasset
+ * </pre>
+ */
+public class Logasset extends GenericModel<Long> implements Serializable {
+    private static final long serialVersionUID = 1L;
+
+    /**
+     * 字段名称：机器编码
+     * 
+     * 数据库字段信息:serverid INT(10)
+     */
+    private Long serverid;
+
+    /**
+     * 字段名称：操作日期, 物理日期 (委托日期)
+     * 
+     * 数据库字段信息:operdate INT(10)
+     */
+    private Long operdate;
+
+    /**
+     * 字段名称：清算日期, (成交日期)
+     * 
+     * 数据库字段信息:cleardate INT(10)
+     */
+    private Long cleardate;
+
+    /**
+     * 字段名称：交收日期, 表明该笔业务所属日期
+     * 
+     * 数据库字段信息:bizdate INT(10)
+     */
+    private Long bizdate;
+
+    /**
+     * 字段名称：客户代码
+     * 
+     * 数据库字段信息:custid BIGINT(19)
+     */
+    private Long custid;
+
+    /**
+     * 字段名称：客户姓名
+     * 
+     * 数据库字段信息:custname VARCHAR(16)
+     */
+    private String custname;
+
+    /**
+     * 字段名称：资金帐号
+     * 
+     * 数据库字段信息:fundid BIGINT(19)
+     */
+    private Long fundid;
+
+    /**
+     * 字段名称：货币代码
+     * 
+     * 数据库字段信息:moneytype CHAR(1)
+     */
+    private String moneytype;
+
+    /**
+     * 字段名称：客户类别
+     * 
+     * 数据库字段信息:custkind CHAR(1)
+     */
+    private String custkind;
+
+    /**
+     * 字段名称：客户分组
+     * 
+     * 数据库字段信息:custgroup CHAR(1)
+     */
+    private String custgroup;
+
+    /**
+     * 字段名称：资金发生数
+     * 
+     * 数据库字段信息:fundeffect DECIMAL(19,2)
+     */
+    private Double fundeffect;
+
+    /**
+     * 字段名称：资金本次余额
+     * 
+     * 数据库字段信息:fundbal DECIMAL(19,2)
+     */
+    private Double fundbal;
+
+    /**
+     * 字段名称：交易市场
+     * 
+     * 数据库字段信息:market CHAR(1)
+     */
+    private String market;
+
+    /**
+     * 字段名称：业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)
+     * 
+     * 数据库字段信息:biztype CHAR(1)
+     */
+    private String biztype;
+
+    /**
+     * 字段名称：证券码
+     * 
+     * 数据库字段信息:stkcode VARCHAR(16)
+     */
+    private String stkcode;
+
+    /**
+     * 字段名称：证券类别
+     * 
+     * 数据库字段信息:stktype CHAR(1)
+     */
+    private String stktype;
+
+    /**
+     * 字段名称：证券名称[或银行名称]
+     * 
+     * 数据库字段信息:stkname VARCHAR(16)
+     */
+    private String stkname;
+
+    /**
+     * 字段名称：证券发生数, (过户数量)
+     * 
+     * 数据库字段信息:stkeffect BIGINT(19)
+     */
+    private Long stkeffect;
+
+    /**
+     * 字段名称：证券余额
+     * 
+     * 数据库字段信息:stkbal BIGINT(19)
+     */
+    private Long stkbal;
+
+    /**
+     * 字段名称：委托数量
+     * 
+     * 数据库字段信息:orderqty BIGINT(19)
+     */
+    private Long orderqty;
+
+    /**
+     * 字段名称：委托价格
+     * 
+     * 数据库字段信息:orderprice BIGINT(19)
+     */
+    private Long orderprice;
+
+    /**
+     * 字段名称：委托日期
+     * 
+     * 数据库字段信息:orderdate INT(10)
+     */
+    private Long orderdate;
+
+    /**
+     * 字段名称：委托时间
+     * 
+     * 数据库字段信息:ordertime INT(10)
+     */
+    private Long ordertime;
+
+    /**
+     * 字段名称：成交数量(存被冲销的流水号)
+     * 
+     * 数据库字段信息:matchqty BIGINT(19)
+     */
+    private Long matchqty;
+
+    /**
+     * 字段名称：成交金额
+     * 
+     * 数据库字段信息:matchamt DECIMAL(19,2)
+     */
+    private Double matchamt;
+
+    /**
+     * 字段名称：成交笔数
+     * 
+     * 数据库字段信息:matchtimes INT(10)
+     */
+    private Long matchtimes;
+
+    /**
+     * 字段名称：成交价格
+     * 
+     * 数据库字段信息:matchprice DECIMAL(9,3)
+     */
+    private Double matchprice;
+
+    /**
+     * 字段名称：成交时间, (第一笔成交的时间)
+     * 
+     * 数据库字段信息:matchtime INT(10)
+     */
+    private Long matchtime;
+
+    /**
+     * 字段名称：净佣金
+     * 
+     * 数据库字段信息:fee_jsxf DECIMAL(12,2)
+     */
+    private Double feeJsxf;
+
+    /**
+     * 字段名称：佣金
+     * 
+     * 数据库字段信息:fee_sxf DECIMAL(12,2)
+     */
+    private Double feeSxf;
+
+    /**
+     * 字段名称：买卖类别
+     * 
+     * 数据库字段信息:bsflag CHAR(2)
+     */
+    private String bsflag;
+
+    public Logasset() {
+    }
+
+    public Long getServerid() {
+        return this.serverid;
+    }
+
+    public void setServerid(Long serverid) {
+        this.serverid = serverid;
+    }
+
+    public Long getOperdate() {
+        return this.operdate;
+    }
+
+    public void setOperdate(Long operdate) {
+        this.operdate = operdate;
+    }
+
+    public Long getCleardate() {
+        return this.cleardate;
+    }
+
+    public void setCleardate(Long cleardate) {
+        this.cleardate = cleardate;
+    }
+
+    public Long getBizdate() {
+        return this.bizdate;
+    }
+
+    public void setBizdate(Long bizdate) {
+        this.bizdate = bizdate;
+    }
+
+    public Long getCustid() {
+        return this.custid;
+    }
+
+    public void setCustid(Long custid) {
+        this.custid = custid;
+    }
+
+    public String getCustname() {
+        return this.custname;
+    }
+
+    public void setCustname(String custname) {
+        this.custname = custname;
+    }
+
+    public Long getFundid() {
+        return this.fundid;
+    }
+
+    public void setFundid(Long fundid) {
+        this.fundid = fundid;
+    }
+
+    public String getMoneytype() {
+        return this.moneytype;
+    }
+
+    public void setMoneytype(String moneytype) {
+        this.moneytype = moneytype;
+    }
+
+    public String getCustkind() {
+        return this.custkind;
+    }
+
+    public void setCustkind(String custkind) {
+        this.custkind = custkind;
+    }
+
+    public String getCustgroup() {
+        return this.custgroup;
+    }
+
+    public void setCustgroup(String custgroup) {
+        this.custgroup = custgroup;
+    }
+
+    public Double getFundeffect() {
+        return this.fundeffect;
+    }
+
+    public void setFundeffect(Double fundeffect) {
+        this.fundeffect = fundeffect;
+    }
+
+    public Double getFundbal() {
+        return this.fundbal;
+    }
+
+    public void setFundbal(Double fundbal) {
+        this.fundbal = fundbal;
+    }
+
+    public String getMarket() {
+        return this.market;
+    }
+
+    public void setMarket(String market) {
+        this.market = market;
+    }
+
+    public String getBiztype() {
+        return this.biztype;
+    }
+
+    public void setBiztype(String biztype) {
+        this.biztype = biztype;
+    }
+
+    public String getStkcode() {
+        return this.stkcode;
+    }
+
+    public void setStkcode(String stkcode) {
+        this.stkcode = stkcode;
+    }
+
+    public String getStktype() {
+        return this.stktype;
+    }
+
+    public void setStktype(String stktype) {
+        this.stktype = stktype;
+    }
+
+    public String getStkname() {
+        return this.stkname;
+    }
+
+    public void setStkname(String stkname) {
+        this.stkname = stkname;
+    }
+
+    public Long getStkeffect() {
+        return this.stkeffect;
+    }
+
+    public void setStkeffect(Long stkeffect) {
+        this.stkeffect = stkeffect;
+    }
+
+    public Long getStkbal() {
+        return this.stkbal;
+    }
+
+    public void setStkbal(Long stkbal) {
+        this.stkbal = stkbal;
+    }
+
+    public Long getOrderqty() {
+        return this.orderqty;
+    }
+
+    public void setOrderqty(Long orderqty) {
+        this.orderqty = orderqty;
+    }
+
+    public Long getOrderprice() {
+        return this.orderprice;
+    }
+
+    public void setOrderprice(Long orderprice) {
+        this.orderprice = orderprice;
+    }
+
+    public Long getOrderdate() {
+        return this.orderdate;
+    }
+
+    public void setOrderdate(Long orderdate) {
+        this.orderdate = orderdate;
+    }
+
+    public Long getOrdertime() {
+        return this.ordertime;
+    }
+
+    public void setOrdertime(Long ordertime) {
+        this.ordertime = ordertime;
+    }
+
+    public Long getMatchqty() {
+        return this.matchqty;
+    }
+
+    public void setMatchqty(Long matchqty) {
+        this.matchqty = matchqty;
+    }
+
+    public Double getMatchamt() {
+        return this.matchamt;
+    }
+
+    public void setMatchamt(Double matchamt) {
+        this.matchamt = matchamt;
+    }
+
+    public Long getMatchtimes() {
+        return this.matchtimes;
+    }
+
+    public void setMatchtimes(Long matchtimes) {
+        this.matchtimes = matchtimes;
+    }
+
+    public Double getMatchprice() {
+        return this.matchprice;
+    }
+
+    public void setMatchprice(Double matchprice) {
+        this.matchprice = matchprice;
+    }
+
+    public Long getMatchtime() {
+        return this.matchtime;
+    }
+
+    public void setMatchtime(Long matchtime) {
+        this.matchtime = matchtime;
+    }
+
+    public Double getFeeJsxf() {
+        return this.feeJsxf;
+    }
+
+    public void setFeeJsxf(Double feeJsxf) {
+        this.feeJsxf = feeJsxf;
+    }
+
+    public Double getFeeSxf() {
+        return this.feeSxf;
+    }
+
+    public void setFeeSxf(Double feeSxf) {
+        this.feeSxf = feeSxf;
+    }
+
+    public String getBsflag() {
+        return this.bsflag;
+    }
+
+    public void setBsflag(String bsflag) {
+        this.bsflag = bsflag;
+    }
+}
+2019-06-12 16:52:55,667 [codegen.export.TemplateProducer]-[INFO] Writing kye/Pojo.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\api\com\kyexpress\erp\tms\logasset\api\model\Logasset.java
+2019-06-12 16:52:55,869 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:55,869 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:55,869 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:55,869 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:56,132 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:56,132 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:56,132 [codegen.export.TemplateProducer]-[DEBUG] template:kye/descript-params.ftl
+2019-06-12 16:52:56,132 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-param.txt
+2019-06-12 16:52:56,132 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/descript-params.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:56,133 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/descript-params.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\descript-params.ftl
+2019-06-12 16:52:56,135 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:56,138 [codegen.export.TemplateProducer]-[DEBUG] Converted content: serverid N 机器编码
+operdate N 操作日期, 物理日期 (委托日期)
+cleardate N 清算日期, (成交日期)
+bizdate N 交收日期, 表明该笔业务所属日期
+custid N 客户代码
+custname N 客户姓名
+fundid N 资金帐号
+moneytype N 货币代码
+custkind N 客户类别
+custgroup N 客户分组
+fundeffect N 资金发生数
+fundbal N 资金本次余额
+market N 交易市场
+biztype N 业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)
+stkcode N 证券码
+stktype N 证券类别
+stkname N 证券名称[或银行名称]
+stkeffect N 证券发生数, (过户数量)
+stkbal N 证券余额
+orderqty N 委托数量
+orderprice N 委托价格
+orderdate N 委托日期
+ordertime N 委托时间
+matchqty N 成交数量(存被冲销的流水号)
+matchamt N 成交金额
+matchtimes N 成交笔数
+matchprice N 成交价格
+matchtime N 成交时间, (第一笔成交的时间)
+feeJsxf N 净佣金
+feeSxf N 佣金
+bsflag N 买卖类别
+
+2019-06-12 16:52:56,196 [codegen.export.TemplateProducer]-[INFO] Writing kye/descript-params.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-param.txt
+2019-06-12 16:52:56,396 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:56,396 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:56,396 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:56,396 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:56,630 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:56,630 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:56,631 [codegen.export.TemplateProducer]-[DEBUG] template:kye/descript-result.ftl
+2019-06-12 16:52:56,631 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-result.txt
+2019-06-12 16:52:56,631 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/descript-result.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:56,631 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/descript-result.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\descript-result.ftl
+2019-06-12 16:52:56,633 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:56,634 [codegen.export.TemplateProducer]-[DEBUG] Converted content: serverid 机器编码
+operdate 操作日期, 物理日期 (委托日期)
+cleardate 清算日期, (成交日期)
+bizdate 交收日期, 表明该笔业务所属日期
+custid 客户代码
+custname 客户姓名
+fundid 资金帐号
+moneytype 货币代码
+custkind 客户类别
+custgroup 客户分组
+fundeffect 资金发生数
+fundbal 资金本次余额
+market 交易市场
+biztype 业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)
+stkcode 证券码
+stktype 证券类别
+stkname 证券名称[或银行名称]
+stkeffect 证券发生数, (过户数量)
+stkbal 证券余额
+orderqty 委托数量
+orderprice 委托价格
+orderdate 委托日期
+ordertime 委托时间
+matchqty 成交数量(存被冲销的流水号)
+matchamt 成交金额
+matchtimes 成交笔数
+matchprice 成交价格
+matchtime 成交时间, (第一笔成交的时间)
+feeJsxf 净佣金
+feeSxf 佣金
+bsflag 买卖类别
+
+2019-06-12 16:52:56,638 [codegen.export.TemplateProducer]-[INFO] Writing kye/descript-result.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-result.txt
+2019-06-12 16:52:56,838 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:56,838 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:56,838 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:56,838 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:57,024 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:57,025 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:57,025 [codegen.export.TemplateProducer]-[DEBUG] template:kye/generic-search.ftl
+2019-06-12 16:52:57,025 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-generic-search.json
+2019-06-12 16:52:57,026 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/generic-search.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:57,026 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/generic-search.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\generic-search.ftl
+2019-06-12 16:52:57,028 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:57,028 [codegen.export.TemplateProducer]-[DEBUG] Converted content: [
+	{
+    "propertyName": "id",
+    "columnName": "id",
+    "columnType": "string",
+    "label": "id",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "serverid",
+    "columnName": "serverid",
+    "columnType": "string",
+    "label": "机器编码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "operdate",
+    "columnName": "operdate",
+    "columnType": "string",
+    "label": "操作日期, 物理日期 (委托日期)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "cleardate",
+    "columnName": "cleardate",
+    "columnType": "string",
+    "label": "清算日期, (成交日期)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "bizdate",
+    "columnName": "bizdate",
+    "columnType": "string",
+    "label": "交收日期, 表明该笔业务所属日期",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custid",
+    "columnName": "custid",
+    "columnType": "string",
+    "label": "客户代码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custname",
+    "columnName": "custname",
+    "columnType": "string",
+    "label": "客户姓名",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "fundid",
+    "columnName": "fundid",
+    "columnType": "string",
+    "label": "资金帐号",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "moneytype",
+    "columnName": "moneytype",
+    "columnType": "string",
+    "label": "货币代码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custkind",
+    "columnName": "custkind",
+    "columnType": "string",
+    "label": "客户类别",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custgroup",
+    "columnName": "custgroup",
+    "columnType": "string",
+    "label": "客户分组",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "fundeffect",
+    "columnName": "fundeffect",
+    "columnType": "string",
+    "label": "资金发生数",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "fundbal",
+    "columnName": "fundbal",
+    "columnType": "string",
+    "label": "资金本次余额",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "market",
+    "columnName": "market",
+    "columnType": "string",
+    "label": "交易市场",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "biztype",
+    "columnName": "biztype",
+    "columnType": "string",
+    "label": "业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkcode",
+    "columnName": "stkcode",
+    "columnType": "string",
+    "label": "证券码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stktype",
+    "columnName": "stktype",
+    "columnType": "string",
+    "label": "证券类别",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkname",
+    "columnName": "stkname",
+    "columnType": "string",
+    "label": "证券名称[或银行名称]",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkeffect",
+    "columnName": "stkeffect",
+    "columnType": "string",
+    "label": "证券发生数, (过户数量)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkbal",
+    "columnName": "stkbal",
+    "columnType": "string",
+    "label": "证券余额",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "orderqty",
+    "columnName": "orderqty",
+    "columnType": "string",
+    "label": "委托数量",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "orderprice",
+    "columnName": "orderprice",
+    "columnType": "string",
+    "label": "委托价格",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "orderdate",
+    "columnName": "orderdate",
+    "columnType": "string",
+    "label": "委托日期",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "ordertime",
+    "columnName": "ordertime",
+    "columnType": "string",
+    "label": "委托时间",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchqty",
+    "columnName": "matchqty",
+    "columnType": "string",
+    "label": "成交数量(存被冲销的流水号)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchamt",
+    "columnName": "matchamt",
+    "columnType": "string",
+    "label": "成交金额",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchtimes",
+    "columnName": "matchtimes",
+    "columnType": "string",
+    "label": "成交笔数",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchprice",
+    "columnName": "matchprice",
+    "columnType": "string",
+    "label": "成交价格",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchtime",
+    "columnName": "matchtime",
+    "columnType": "string",
+    "label": "成交时间, (第一笔成交的时间)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "feeJsxf",
+    "columnName": "fee_jsxf",
+    "columnType": "string",
+    "label": "净佣金",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "feeSxf",
+    "columnName": "fee_sxf",
+    "columnType": "string",
+    "label": "佣金",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "bsflag",
+    "columnName": "bsflag",
+    "columnType": "string",
+    "label": "买卖类别",
+    "lookupCode": ""
+  }
+]
+2019-06-12 16:52:57,033 [codegen.export.TemplateProducer]-[INFO] Writing kye/generic-search.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-generic-search.json
+2019-06-12 16:52:57,234 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:57,234 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:57,234 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:57,234 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:57,424 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:57,425 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:57,425 [codegen.export.TemplateProducer]-[DEBUG] template:kye/json.ftl
+2019-06-12 16:52:57,425 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-json.txt
+2019-06-12 16:52:57,425 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/json.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:57,425 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/json.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\json.ftl
+2019-06-12 16:52:57,426 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:57,426 [codegen.export.TemplateProducer]-[DEBUG] Converted content: {
+	"id": "0",
+"serverid": "0",
+"operdate": "0",
+"cleardate": "0",
+"bizdate": "0",
+"custid": "0",
+"custname": "0",
+"fundid": "0",
+"moneytype": "0",
+"custkind": "0",
+"custgroup": "0",
+"fundeffect": "0",
+"fundbal": "0",
+"market": "0",
+"biztype": "0",
+"stkcode": "0",
+"stktype": "0",
+"stkname": "0",
+"stkeffect": "0",
+"stkbal": "0",
+"orderqty": "0",
+"orderprice": "0",
+"orderdate": "0",
+"ordertime": "0",
+"matchqty": "0",
+"matchamt": "0",
+"matchtimes": "0",
+"matchprice": "0",
+"matchtime": "0",
+"feeJsxf": "0",
+"feeSxf": "0",
+"bsflag": "0"
+}
+2019-06-12 16:52:57,429 [codegen.export.TemplateProducer]-[INFO] Writing kye/json.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-json.txt
+2019-06-12 16:52:57,630 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:57,630 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:57,630 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:57,630 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:57,763 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:57,763 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:57,763 [codegen.export.TemplateProducer]-[DEBUG] template:kye/define-column.ftl
+2019-06-12 16:52:57,763 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-define-column.txt
+2019-06-12 16:52:57,763 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/define-column.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:57,764 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/define-column.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\define-column.ftl
+2019-06-12 16:52:57,765 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:57,765 [codegen.export.TemplateProducer]-[DEBUG] Converted content: [
+	{
+    "key": "id",
+    "label": "id"
+  },
+	{
+    "key": "serverid",
+    "label": "机器编码"
+  },
+	{
+    "key": "operdate",
+    "label": "操作日期, 物理日期 (委托日期)"
+  },
+	{
+    "key": "cleardate",
+    "label": "清算日期, (成交日期)"
+  },
+	{
+    "key": "bizdate",
+    "label": "交收日期, 表明该笔业务所属日期"
+  },
+	{
+    "key": "custid",
+    "label": "客户代码"
+  },
+	{
+    "key": "custname",
+    "label": "客户姓名"
+  },
+	{
+    "key": "fundid",
+    "label": "资金帐号"
+  },
+	{
+    "key": "moneytype",
+    "label": "货币代码"
+  },
+	{
+    "key": "custkind",
+    "label": "客户类别"
+  },
+	{
+    "key": "custgroup",
+    "label": "客户分组"
+  },
+	{
+    "key": "fundeffect",
+    "label": "资金发生数"
+  },
+	{
+    "key": "fundbal",
+    "label": "资金本次余额"
+  },
+	{
+    "key": "market",
+    "label": "交易市场"
+  },
+	{
+    "key": "biztype",
+    "label": "业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)"
+  },
+	{
+    "key": "stkcode",
+    "label": "证券码"
+  },
+	{
+    "key": "stktype",
+    "label": "证券类别"
+  },
+	{
+    "key": "stkname",
+    "label": "证券名称[或银行名称]"
+  },
+	{
+    "key": "stkeffect",
+    "label": "证券发生数, (过户数量)"
+  },
+	{
+    "key": "stkbal",
+    "label": "证券余额"
+  },
+	{
+    "key": "orderqty",
+    "label": "委托数量"
+  },
+	{
+    "key": "orderprice",
+    "label": "委托价格"
+  },
+	{
+    "key": "orderdate",
+    "label": "委托日期"
+  },
+	{
+    "key": "ordertime",
+    "label": "委托时间"
+  },
+	{
+    "key": "matchqty",
+    "label": "成交数量(存被冲销的流水号)"
+  },
+	{
+    "key": "matchamt",
+    "label": "成交金额"
+  },
+	{
+    "key": "matchtimes",
+    "label": "成交笔数"
+  },
+	{
+    "key": "matchprice",
+    "label": "成交价格"
+  },
+	{
+    "key": "matchtime",
+    "label": "成交时间, (第一笔成交的时间)"
+  },
+	{
+    "key": "feeJsxf",
+    "label": "净佣金"
+  },
+	{
+    "key": "feeSxf",
+    "label": "佣金"
+  },
+	{
+    "key": "bsflag",
+    "label": "买卖类别"
+  }
+]
+2019-06-12 16:52:57,768 [codegen.export.TemplateProducer]-[INFO] Writing kye/define-column.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\descript\Logasset-define-column.txt
+2019-06-12 16:52:57,968 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:57,968 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:57,968 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:57,968 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:58,089 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:58,089 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:58,089 [codegen.export.TemplateProducer]-[DEBUG] template:kye/BO.ftl
+2019-06-12 16:52:58,089 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\api\com\kyexpress\erp\tms\logasset\api\bo\LogassetBO.java
+2019-06-12 16:52:58,089 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/BO.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:58,090 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/BO.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\BO.ftl
+2019-06-12 16:52:58,091 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:58,091 [freemarker.cache]-[DEBUG] Copyright.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:58,091 [freemarker.cache]-[DEBUG] JavaHeader.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:58,092 [codegen.export.TemplateProducer]-[DEBUG] Converted content: /**************************************************************************/
+/*          乐在分享 zhoushisheng                                        */
+/*                                                                       */
+/*                                                                       */
+
+/**************************************************************************/
+
+/**
+  * <pre>
+  * 作   者：zhoushisheng;
+  * 创建日期：2019-6-12
+  * </pre>
+  */
+
+package com.kyexpress.erp.tms.logasset.api.bo;
+
+import com.kyexpress.framework.model.GenericBO;
+import com.kyexpress.erp.tms.logasset.api.model.Logasset;
+
+/**
+ * <pre>
+ * 客户交易数据<<logasset>>(数据来源于集中交易和融资融券)业务实体类
+ * </pre>
+ */
+public class LogassetBO extends GenericBO<Logasset> {
+    public LogassetBO() {
+        setVo(new Logasset());
+    }
+    
+    public Logasset getLogasset() {
+        return (Logasset) getVo();
+    }
+    
+    public void setLogasset(Logasset vo) {
+        setVo(vo);
+    }
+}
+2019-06-12 16:52:58,148 [codegen.export.TemplateProducer]-[INFO] Writing kye/BO.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\api\com\kyexpress\erp\tms\logasset\api\bo\LogassetBO.java
+2019-06-12 16:52:58,349 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:58,349 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:58,349 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:58,349 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:58,480 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:58,480 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:58,480 [codegen.export.TemplateProducer]-[DEBUG] template:kye/Mapper.ftl
+2019-06-12 16:52:58,481 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\provider\com\kyexpress\erp\tms\logasset\provider\mapper\LogassetMapper.java
+2019-06-12 16:52:58,481 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/Mapper.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:58,481 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/Mapper.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\Mapper.ftl
+2019-06-12 16:52:58,482 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:58,483 [freemarker.cache]-[DEBUG] Copyright.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:58,483 [freemarker.cache]-[DEBUG] JavaHeader.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:58,483 [codegen.export.TemplateProducer]-[DEBUG] Converted content: /**************************************************************************/
+/*          乐在分享 zhoushisheng                                        */
+/*                                                                       */
+/*                                                                       */
+
+/**************************************************************************/
+
+/**
+  * <pre>
+  * 作   者：zhoushisheng;
+  * 创建日期：2019-6-12
+  * </pre>
+  */
+
+package com.kyexpress.erp.tms.logasset.provider.mapper;
+
+import com.kyexpress.framework.mapper.GenericMapper;
+import org.apache.ibatis.annotations.Mapper;
+import com.kyexpress.erp.tms.logasset.api.model.Logasset;
+
+/**
+ * <pre>
+ * 客户交易数据<<logasset>>(数据来源于集中交易和融资融券)数据访问接口
+ * </pre>
+ */
+@Mapper
+public interface LogassetMapper extends GenericMapper<Logasset, Long> {
+}
+2019-06-12 16:52:58,558 [codegen.export.TemplateProducer]-[INFO] Writing kye/Mapper.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\provider\com\kyexpress\erp\tms\logasset\provider\mapper\LogassetMapper.java
+2019-06-12 16:52:58,759 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:58,759 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:58,759 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:58,759 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:58,919 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:58,920 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:58,920 [codegen.export.TemplateProducer]-[DEBUG] template:kye/MapperXML.ftl
+2019-06-12 16:52:58,920 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\mapperXML\com\kyexpress\erp\tms\logasset\provider\mapper\LogassetMapper.xml
+2019-06-12 16:52:58,920 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/MapperXML.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:58,920 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/MapperXML.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\MapperXML.ftl
+2019-06-12 16:52:58,922 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:58,922 [codegen.export.TemplateProducer]-[DEBUG] Converted content: <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kyexpress.erp.tms.logasset.provider.mapper.LogassetMapper">
+    <resultMap id="BaseResultMap" type="com.kyexpress.erp.tms.logasset.api.model.Logasset">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="serverid" jdbcType="INTEGER" property="serverid" />
+        <result column="operdate" jdbcType="INTEGER" property="operdate" />
+        <result column="cleardate" jdbcType="INTEGER" property="cleardate" />
+        <result column="bizdate" jdbcType="INTEGER" property="bizdate" />
+        <result column="custid" jdbcType="BIGINT" property="custid" />
+        <result column="custname" jdbcType="VARCHAR" property="custname" />
+        <result column="fundid" jdbcType="BIGINT" property="fundid" />
+        <result column="moneytype" jdbcType="CHAR" property="moneytype" />
+        <result column="custkind" jdbcType="CHAR" property="custkind" />
+        <result column="custgroup" jdbcType="CHAR" property="custgroup" />
+        <result column="fundeffect" jdbcType="DECIMAL" property="fundeffect" />
+        <result column="fundbal" jdbcType="DECIMAL" property="fundbal" />
+        <result column="market" jdbcType="CHAR" property="market" />
+        <result column="biztype" jdbcType="CHAR" property="biztype" />
+        <result column="stkcode" jdbcType="VARCHAR" property="stkcode" />
+        <result column="stktype" jdbcType="CHAR" property="stktype" />
+        <result column="stkname" jdbcType="VARCHAR" property="stkname" />
+        <result column="stkeffect" jdbcType="BIGINT" property="stkeffect" />
+        <result column="stkbal" jdbcType="BIGINT" property="stkbal" />
+        <result column="orderqty" jdbcType="BIGINT" property="orderqty" />
+        <result column="orderprice" jdbcType="BIGINT" property="orderprice" />
+        <result column="orderdate" jdbcType="INTEGER" property="orderdate" />
+        <result column="ordertime" jdbcType="INTEGER" property="ordertime" />
+        <result column="matchqty" jdbcType="BIGINT" property="matchqty" />
+        <result column="matchamt" jdbcType="DECIMAL" property="matchamt" />
+        <result column="matchtimes" jdbcType="INTEGER" property="matchtimes" />
+        <result column="matchprice" jdbcType="DECIMAL" property="matchprice" />
+        <result column="matchtime" jdbcType="INTEGER" property="matchtime" />
+        <result column="fee_jsxf" jdbcType="DECIMAL" property="feeJsxf" />
+        <result column="fee_sxf" jdbcType="DECIMAL" property="feeSxf" />
+        <result column="bsflag" jdbcType="CHAR" property="bsflag" />
+    </resultMap>
+    <sql id="BaseTable">
+        logasset
+    </sql>
+</mapper>
+2019-06-12 16:52:58,997 [codegen.export.TemplateProducer]-[INFO] Writing kye/MapperXML.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\mapperXML\com\kyexpress\erp\tms\logasset\provider\mapper\LogassetMapper.xml
+2019-06-12 16:52:59,197 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:59,197 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:59,197 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:59,197 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:59,337 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:59,338 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:59,338 [codegen.export.TemplateProducer]-[DEBUG] template:kye/RemoteService.ftl
+2019-06-12 16:52:59,338 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\api\com\kyexpress\erp\tms\logasset\api\service\LogassetRemoteService.java
+2019-06-12 16:52:59,338 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/RemoteService.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:59,339 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/RemoteService.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\RemoteService.ftl
+2019-06-12 16:52:59,340 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:59,340 [freemarker.cache]-[DEBUG] Copyright.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:59,340 [freemarker.cache]-[DEBUG] JavaHeader.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:59,341 [codegen.export.TemplateProducer]-[DEBUG] Converted content: /**************************************************************************/
+/*          乐在分享 zhoushisheng                                        */
+/*                                                                       */
+/*                                                                       */
+
+/**************************************************************************/
+
+/**
+  * <pre>
+  * 作   者：zhoushisheng;
+  * 创建日期：2019-6-12
+  * </pre>
+  */
+
+package com.kyexpress.erp.tms.logasset.api.service;
+
+import java.util.List;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.kyexpress.erp.tms.logasset.api.model.Logasset;
+import com.kyexpress.erp.tms.logasset.api.bo.LogassetBO;
+import com.kyexpress.framework.model.Pagination;
+import com.kyexpress.framework.model.ResponseData;
+
+/**
+ * <pre>
+ * 客户交易数据<<logasset>>(数据来源于集中交易和融资融券)业务接口
+ * </pre>
+ */
+public interface LogassetRemoteService {
+    
+    @RequestMapping(value = "/logasset/get", method = RequestMethod.POST)
+    ResponseData<Logasset> get(@RequestBody Logasset logasset);
+    
+    @RequestMapping(value = "/logasset/save", method = RequestMethod.POST)
+    ResponseData<Integer> save(@RequestBody Logasset logasset);
+    
+    @RequestMapping(value = "/logasset/update", method = RequestMethod.POST)
+    ResponseData<Integer> update(@RequestBody Logasset logasset);
+    
+    @RequestMapping(value = "/logasset/list", method = RequestMethod.POST)
+    ResponseData<List<Logasset>> list(@RequestBody Logasset logasset);
+
+    @RequestMapping(value = "/logasset/search", method = RequestMethod.POST)
+    ResponseData<Pagination<Logasset>> search(@RequestBody LogassetBO logassetBO);
+}
+2019-06-12 16:52:59,397 [codegen.export.TemplateProducer]-[INFO] Writing kye/RemoteService.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\api\com\kyexpress\erp\tms\logasset\api\service\LogassetRemoteService.java
+2019-06-12 16:52:59,598 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:59,598 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:59,598 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:59,598 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:52:59,685 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:52:59,685 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:52:59,685 [codegen.export.TemplateProducer]-[DEBUG] template:kye/Service.ftl
+2019-06-12 16:52:59,685 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\provider\com\kyexpress\erp\tms\logasset\provider\service\LogassetService.java
+2019-06-12 16:52:59,685 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/Service.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:52:59,685 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/Service.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\Service.ftl
+2019-06-12 16:52:59,689 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:59,690 [freemarker.cache]-[DEBUG] Copyright.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:59,690 [freemarker.cache]-[DEBUG] JavaHeader.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:52:59,690 [codegen.export.TemplateProducer]-[DEBUG] Converted content: /**************************************************************************/
+/*          乐在分享 zhoushisheng                                        */
+/*                                                                       */
+/*                                                                       */
+
+/**************************************************************************/
+
+/**
+  * <pre>
+  * 作   者：zhoushisheng;
+  * 创建日期：2019-6-12
+  * </pre>
+  */
+
+package com.kyexpress.erp.tms.logasset.provider.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.kyexpress.framework.service.GenericService;
+import com.kyexpress.erp.tms.logasset.api.model.Logasset;
+import com.kyexpress.erp.tms.logasset.provider.mapper.LogassetMapper;
+
+/**
+ * <pre>
+ * 客户交易数据<<logasset>>(数据来源于集中交易和融资融券)业务类
+ * </pre>
+ */
+@Service("logassetService")
+public class LogassetService extends GenericService<Logasset, Long> {
+    public LogassetService(@Autowired LogassetMapper logassetMapper) {
+        super(logassetMapper);
+    }
+    
+    public LogassetMapper getMapper() {
+        return (LogassetMapper) super.genericMapper;
+    }
+}
+2019-06-12 16:52:59,745 [codegen.export.TemplateProducer]-[INFO] Writing kye/Service.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\provider\com\kyexpress\erp\tms\logasset\provider\service\LogassetService.java
+2019-06-12 16:52:59,945 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:52:59,945 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:52:59,945 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:52:59,945 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:53:00,043 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:53:00,043 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:53:00,043 [codegen.export.TemplateProducer]-[DEBUG] template:kye/Controller.ftl
+2019-06-12 16:53:00,043 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\provider\com\kyexpress\erp\tms\logasset\provider\controller\LogassetController.java
+2019-06-12 16:53:00,043 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/Controller.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:53:00,044 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/Controller.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\Controller.ftl
+2019-06-12 16:53:00,046 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:53:00,046 [freemarker.cache]-[DEBUG] Copyright.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:53:00,046 [freemarker.cache]-[DEBUG] JavaHeader.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:53:00,046 [codegen.export.TemplateProducer]-[DEBUG] Converted content: /**************************************************************************/
+/*          乐在分享 zhoushisheng                                        */
+/*                                                                       */
+/*                                                                       */
+
+/**************************************************************************/
+
+/**
+  * <pre>
+  * 作   者：zhoushisheng;
+  * 创建日期：2019-6-12
+  * </pre>
+  */
+
+package com.kyexpress.erp.tms.logasset.provider.controller;
+
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.kyexpress.common.authcenter.client.annotation.Authentication;
+import com.kyexpress.common.authcenter.client.constant.PrivilegeCode;
+import com.kyexpress.erp.tms.logasset.api.model.Logasset;
+import com.kyexpress.erp.tms.logasset.api.bo.LogassetBO;
+import com.kyexpress.erp.tms.logasset.api.service.LogassetRemoteService;
+import com.kyexpress.erp.tms.logasset.provider.service.LogassetService;
+import com.kyexpress.framework.annotation.PropertyFiltration;
+import com.kyexpress.framework.model.Pagination;
+import com.kyexpress.framework.model.ResponseData;
+import com.kyexpress.framework.validator.annotation.FluentValid;
+
+
+/**
+ * <pre>
+ * 客户交易数据<<logasset>>(数据来源于集中交易和融资融券)表现层控制类
+ * </pre>
+ */
+@RestController
+@Authentication(name = "logasset", description = "客户交易数据<<logasset>>(数据来源于集中交易和融资融券)", privilege = PrivilegeCode.DEFAULT)
+public class LogassetController implements LogassetRemoteService {
+
+    private static final Logger logger = LoggerFactory.getLogger(LogassetController.class);
+    
+    @Autowired
+    private LogassetService logassetService;
+
+    @Override
+    @Authentication(name = PrivilegeCode.DETAIL, description = PrivilegeCode.DETAIL_DESCRIPTION)
+    @PropertyFiltration
+    public ResponseData<Logasset> get(@RequestBody Logasset logasset) {
+        logasset = logassetService.get(logasset.getId());
+        ResponseData<Logasset> resp = new ResponseData<>();
+        resp.setData(logasset).ok();
+        return resp;
+    }
+    
+    @Override
+    @Authentication(name = PrivilegeCode.ADD, description = PrivilegeCode.ADD_DESCRIPTION)
+    public ResponseData<Integer> save(@FluentValid @RequestBody Logasset logasset) {
+        ResponseData<Integer> resp = new ResponseData<>();
+        // TODO save ...
+        // resp.setData().ok();
+        return resp;
+    }
+    
+    @Override
+    @Authentication(name = PrivilegeCode.UPDATE, description = PrivilegeCode.UPDATE_DESCRIPTION)
+    public ResponseData<Integer> update(@FluentValid @RequestBody Logasset logasset) {
+        ResponseData<Integer> resp = new ResponseData<>();
+        // TODO update ...
+        //resp.setData().ok();
+        return resp;
+    }
+    
+        @Override
+    @Authentication(name = PrivilegeCode.SELECT_ALL, description = PrivilegeCode.SELECT_ALL_DESCRIPTION)
+    @PropertyFiltration
+    public ResponseData<List<Logasset>> list(@RequestBody Logasset logasset) {
+        ResponseData<List<Logasset>> resp = new ResponseData<>();
+        // TODO list ...
+        // resp.setData().ok();
+        return resp;
+    }
+
+    @Override
+    @Authentication(name = PrivilegeCode.SELECT, description = PrivilegeCode.SELECT_DESCRIPTION)
+    @PropertyFiltration
+    public ResponseData<Pagination<Logasset>> search(@RequestBody LogassetBO logassetBO) {
+        ResponseData<Pagination<Logasset>> resp = new ResponseData<>();
+        @SuppressWarnings("unchecked")
+        Pagination<Logasset> pagination = Pagination.getInstance4BO(logassetBO);
+        logassetService.search(pagination);
+        resp.setData(pagination).ok();
+        return resp;
+    }
+}
+2019-06-12 16:53:00,101 [codegen.export.TemplateProducer]-[INFO] Writing kye/Controller.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\provider\com\kyexpress\erp\tms\logasset\provider\controller\LogassetController.java
+2019-06-12 16:53:00,302 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!
+2019-06-12 16:53:00,302 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: start!
+2019-06-12 16:53:00,302 [codegen.BaseRun]-[DEBUG] Export Class is:codegen.export.DBExporter
+2019-06-12 16:53:00,302 [codegen.export.DBExporter]-[DEBUG] init JavaClass...
+2019-06-12 16:53:00,399 [codegen.export.DBExporter]-[DEBUG] init OutputFile...
+2019-06-12 16:53:00,399 [codegen.export.DBExporter]-[DEBUG] init Model...
+2019-06-12 16:53:00,399 [codegen.export.TemplateProducer]-[DEBUG] template:kye/ClientService.ftl
+2019-06-12 16:53:00,399 [codegen.export.TemplateProducer]-[DEBUG] outputFile:C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\client\com\kyexpress\erp\tms\logasset\client\client\service\LogassetService.java
+2019-06-12 16:53:00,399 [freemarker.cache]-[DEBUG] Could not find template in cache, creating new one; id=[kye/ClientService.ftl[zh_CN,UTF-8,parsed] ]
+2019-06-12 16:53:00,400 [freemarker.cache]-[DEBUG] Compiling FreeMarker template kye/ClientService.ftl[zh_CN,UTF-8,parsed]  from C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\template\kye\ClientService.ftl
+2019-06-12 16:53:00,403 [freemarker.cache]-[DEBUG] kye/var.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:53:00,403 [freemarker.cache]-[DEBUG] Copyright.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:53:00,403 [freemarker.cache]-[DEBUG] JavaHeader.ftl[zh_CN,UTF-8,parsed] cached copy not yet stale; using cached.
+2019-06-12 16:53:00,403 [codegen.export.TemplateProducer]-[DEBUG] Converted content: /**************************************************************************/
+/*          乐在分享 zhoushisheng                                        */
+/*                                                                       */
+/*                                                                       */
+
+/**************************************************************************/
+
+/**
+  * <pre>
+  * 作   者：zhoushisheng;
+  * 创建日期：2019-6-12
+  * </pre>
+  */
+
+package com.kyexpress.erp.tms.logasset.client.client.service;
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.stereotype.Component;
+
+import com.kyexpress.erp.tms.logasset.api.service.LogassetRemoteService;
+
+/**
+ * <pre>
+ * 客户交易数据<<logasset>>(数据来源于集中交易和融资融券)业务接口
+ * </pre>
+ */
+@FeignClient(name = Interface.SERVICE_NAME, fallback = LogassetService.HystrixClientFallback.class)
+public interface LogassetService extends LogassetRemoteService {
+
+    @Component
+    public static class HystrixClientFallback implements LogassetService {
+    	// to complete
+    }
+}
+2019-06-12 16:53:00,477 [codegen.export.TemplateProducer]-[INFO] Writing kye/ClientService.ftl to C:\Users\lenovo\Desktop\微服务设计文档体系\其它文件\codeGen\out\src\java\client\com\kyexpress\erp\tms\logasset\client\client\service\LogassetService.java
+2019-06-12 16:53:00,678 [codegen.BaseRun]-[DEBUG] pool-1-thread-1: end!

@@ -1,0 +1,226 @@
+[
+	{
+    "propertyName": "id",
+    "columnName": "id",
+    "columnType": "string",
+    "label": "id",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "serverid",
+    "columnName": "serverid",
+    "columnType": "string",
+    "label": "机器编码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "operdate",
+    "columnName": "operdate",
+    "columnType": "string",
+    "label": "操作日期, 物理日期 (委托日期)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "cleardate",
+    "columnName": "cleardate",
+    "columnType": "string",
+    "label": "清算日期, (成交日期)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "bizdate",
+    "columnName": "bizdate",
+    "columnType": "string",
+    "label": "交收日期, 表明该笔业务所属日期",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custid",
+    "columnName": "custid",
+    "columnType": "string",
+    "label": "客户代码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custname",
+    "columnName": "custname",
+    "columnType": "string",
+    "label": "客户姓名",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "fundid",
+    "columnName": "fundid",
+    "columnType": "string",
+    "label": "资金帐号",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "moneytype",
+    "columnName": "moneytype",
+    "columnType": "string",
+    "label": "货币代码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custkind",
+    "columnName": "custkind",
+    "columnType": "string",
+    "label": "客户类别",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "custgroup",
+    "columnName": "custgroup",
+    "columnType": "string",
+    "label": "客户分组",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "fundeffect",
+    "columnName": "fundeffect",
+    "columnType": "string",
+    "label": "资金发生数",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "fundbal",
+    "columnName": "fundbal",
+    "columnType": "string",
+    "label": "资金本次余额",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "market",
+    "columnName": "market",
+    "columnType": "string",
+    "label": "交易市场",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "biztype",
+    "columnName": "biztype",
+    "columnType": "string",
+    "label": "业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkcode",
+    "columnName": "stkcode",
+    "columnType": "string",
+    "label": "证券码",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stktype",
+    "columnName": "stktype",
+    "columnType": "string",
+    "label": "证券类别",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkname",
+    "columnName": "stkname",
+    "columnType": "string",
+    "label": "证券名称[或银行名称]",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkeffect",
+    "columnName": "stkeffect",
+    "columnType": "string",
+    "label": "证券发生数, (过户数量)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "stkbal",
+    "columnName": "stkbal",
+    "columnType": "string",
+    "label": "证券余额",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "orderqty",
+    "columnName": "orderqty",
+    "columnType": "string",
+    "label": "委托数量",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "orderprice",
+    "columnName": "orderprice",
+    "columnType": "string",
+    "label": "委托价格",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "orderdate",
+    "columnName": "orderdate",
+    "columnType": "string",
+    "label": "委托日期",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "ordertime",
+    "columnName": "ordertime",
+    "columnType": "string",
+    "label": "委托时间",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchqty",
+    "columnName": "matchqty",
+    "columnType": "string",
+    "label": "成交数量(存被冲销的流水号)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchamt",
+    "columnName": "matchamt",
+    "columnType": "string",
+    "label": "成交金额",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchtimes",
+    "columnName": "matchtimes",
+    "columnType": "string",
+    "label": "成交笔数",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchprice",
+    "columnName": "matchprice",
+    "columnType": "string",
+    "label": "成交价格",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "matchtime",
+    "columnName": "matchtime",
+    "columnType": "string",
+    "label": "成交时间, (第一笔成交的时间)",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "feeJsxf",
+    "columnName": "fee_jsxf",
+    "columnType": "string",
+    "label": "净佣金",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "feeSxf",
+    "columnName": "fee_sxf",
+    "columnType": "string",
+    "label": "佣金",
+    "lookupCode": ""
+  },
+	{
+    "propertyName": "bsflag",
+    "columnName": "bsflag",
+    "columnType": "string",
+    "label": "买卖类别",
+    "lookupCode": ""
+  }
+]

@@ -1,0 +1,31 @@
+serverid 机器编码
+operdate 操作日期, 物理日期 (委托日期)
+cleardate 清算日期, (成交日期)
+bizdate 交收日期, 表明该笔业务所属日期
+custid 客户代码
+custname 客户姓名
+fundid 资金帐号
+moneytype 货币代码
+custkind 客户类别
+custgroup 客户分组
+fundeffect 资金发生数
+fundbal 资金本次余额
+market 交易市场
+biztype 业务大类 0 非清算业务,1基金,2 非交易所债券3, 证券业务(注意：1、2、3都是晚上清算时候填入的，0是白天写的)
+stkcode 证券码
+stktype 证券类别
+stkname 证券名称[或银行名称]
+stkeffect 证券发生数, (过户数量)
+stkbal 证券余额
+orderqty 委托数量
+orderprice 委托价格
+orderdate 委托日期
+ordertime 委托时间
+matchqty 成交数量(存被冲销的流水号)
+matchamt 成交金额
+matchtimes 成交笔数
+matchprice 成交价格
+matchtime 成交时间, (第一笔成交的时间)
+feeJsxf 净佣金
+feeSxf 佣金
+bsflag 买卖类别

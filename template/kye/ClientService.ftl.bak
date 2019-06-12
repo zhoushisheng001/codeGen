@@ -1,0 +1,26 @@
+<#include "var.ftl"/><#t/>
+<#assign basePath = custom.module + '/' + voVar>
+<#-- ================================ -->
+<#include "../Copyright.ftl"/>
+<#include "../JavaHeader.ftl"/>
+
+package ${pojo.packageName};
+
+import org.springframework.cloud.netflix.feign.FeignClient;
+import org.springframework.stereotype.Component;
+
+import ${remoteServiceClass};
+
+/**
+ * <pre>
+ * ${pojo.table.comment}业务接口
+ * </pre>
+ */
+@FeignClient(name = Interface.SERVICE_NAME, fallback = ${pojo.fileName}.HystrixClientFallback.class)
+public class ${pojo.fileName} extends ${vo}RemoteService {
+
+    @Component
+    public static class HystrixClientFallback implements ${pojo.fileName} {
+    	// to complete
+    }
+}

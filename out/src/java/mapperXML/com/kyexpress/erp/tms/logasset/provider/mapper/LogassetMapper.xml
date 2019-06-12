@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kyexpress.erp.tms.logasset.provider.mapper.LogassetMapper">
+    <resultMap id="BaseResultMap" type="com.kyexpress.erp.tms.logasset.api.model.Logasset">
+        <id column="id" jdbcType="BIGINT" property="id" />
+        <result column="serverid" jdbcType="INTEGER" property="serverid" />
+        <result column="operdate" jdbcType="INTEGER" property="operdate" />
+        <result column="cleardate" jdbcType="INTEGER" property="cleardate" />
+        <result column="bizdate" jdbcType="INTEGER" property="bizdate" />
+        <result column="custid" jdbcType="BIGINT" property="custid" />
+        <result column="custname" jdbcType="VARCHAR" property="custname" />
+        <result column="fundid" jdbcType="BIGINT" property="fundid" />
+        <result column="moneytype" jdbcType="CHAR" property="moneytype" />
+        <result column="custkind" jdbcType="CHAR" property="custkind" />
+        <result column="custgroup" jdbcType="CHAR" property="custgroup" />
+        <result column="fundeffect" jdbcType="DECIMAL" property="fundeffect" />
+        <result column="fundbal" jdbcType="DECIMAL" property="fundbal" />
+        <result column="market" jdbcType="CHAR" property="market" />
+        <result column="biztype" jdbcType="CHAR" property="biztype" />
+        <result column="stkcode" jdbcType="VARCHAR" property="stkcode" />
+        <result column="stktype" jdbcType="CHAR" property="stktype" />
+        <result column="stkname" jdbcType="VARCHAR" property="stkname" />
+        <result column="stkeffect" jdbcType="BIGINT" property="stkeffect" />
+        <result column="stkbal" jdbcType="BIGINT" property="stkbal" />
+        <result column="orderqty" jdbcType="BIGINT" property="orderqty" />
+        <result column="orderprice" jdbcType="BIGINT" property="orderprice" />
+        <result column="orderdate" jdbcType="INTEGER" property="orderdate" />
+        <result column="ordertime" jdbcType="INTEGER" property="ordertime" />
+        <result column="matchqty" jdbcType="BIGINT" property="matchqty" />
+        <result column="matchamt" jdbcType="DECIMAL" property="matchamt" />
+        <result column="matchtimes" jdbcType="INTEGER" property="matchtimes" />
+        <result column="matchprice" jdbcType="DECIMAL" property="matchprice" />
+        <result column="matchtime" jdbcType="INTEGER" property="matchtime" />
+        <result column="fee_jsxf" jdbcType="DECIMAL" property="feeJsxf" />
+        <result column="fee_sxf" jdbcType="DECIMAL" property="feeSxf" />
+        <result column="bsflag" jdbcType="CHAR" property="bsflag" />
+    </resultMap>
+    <sql id="BaseTable">
+        logasset
+    </sql>
+</mapper>
